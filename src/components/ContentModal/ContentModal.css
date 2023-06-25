@@ -1,0 +1,102 @@
+
+.ContentModal__Lanscape{
+  object-fit:scale-down;
+  border-radius: 10px;
+}
+.ContentModal__portrait{
+  display: none;
+  object-fit:inherit;
+  border-radius: 10px;
+}
+
+.tagline{
+  padding-bottom: 10px;
+  align-self: center;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: normal;
+  font-size: medium;
+  
+}
+
+.ContentModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.ContentModal::-webkit-scrollbar {
+  display: none;
+}
+
+.contentmodal_about{
+  padding: 10px;
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  font-family:'fantasy';
+  justify-content: space-evenly;
+  font-weight: 100;
+  color: white;
+  font-size: smaller;
+}
+.contentModal_title{
+  height: 12%;
+  font-size: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.ContentModal__description {
+  display: flex;
+  height: 40%;
+  overflow-y: scroll;
+  padding: 15px;
+  border-radius: 20px;
+  scrollbar-width: thin; /* Firefox */
+  box-shadow: inset 0 0 5px #000000;
+  text-align: justify;
+  color: white;
+  font-family: 'monospace ';
+  font-size:small;
+}
+
+.ContentModal__description::-webkit-scrollbar {
+  display: none;
+}
+
+
+@media (min-width: 835px) { 
+  .ContentModal__Lanscape {
+    display: none;
+    }   
+  
+  .ContentModal__portrait{
+    display: flex;
+    width: 38%;
+  }
+  .ContentModal {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  .contentmodal_about {
+    width: 58%;
+    padding: 0;
+    height: 100%;
+  }
+  .contentModal_title {
+    font-size: 3.5vw;
+  }
+  .ContentModal__description {
+    font-size: 22px;
+  }
+}

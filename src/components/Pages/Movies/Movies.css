@@ -1,0 +1,9 @@
+.m{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pageTitle{
+    font-family: "Cambria";
+
+}
